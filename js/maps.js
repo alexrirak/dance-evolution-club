@@ -38,7 +38,16 @@ var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
 
 
 map.mapTypes.set('Styled', styledMapType);
-
+
+var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(40.913404, -74.109098),
+          map: map,
+          title: 'Dance Evolution'
+        });
+
+				google.maps.event.addListener(marker, 'click', function() {
+				    window.location.href = 'https://goo.gl/maps/7aN8A7as6pR2';
+				});
 
 
 }
