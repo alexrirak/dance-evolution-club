@@ -396,9 +396,9 @@ header[role="title-page"] h2,header[role="title-page"] h2{ color:#000; font-size
 
 .pricing>section input[type="button"]{ margin:27px auto; display:block; text-align:center; text-transform:uppercase; color:#FFF; outline:none; cursor:pointer; line-height:53px; font-size:14px; font-weight:700; color:#C3272B; background-color:#FFF; padding:0 32px}
 
-.pricing>section input[type="button"]:hover{ background-color:#549e3a; color:#FFF}
+/*.pricing>section input[type="button"]:hover{ background-color:#549e3a; color:#FFF}*/
 
-.pricing>section:hover{ background-color:#e74c3c;-webkit-transform:scale(1.1);
+/*.pricing>section:hover{ background-color:#FE0002;-webkit-transform:scale(1.1);*/
 
 transform:scale(1.1);}
 
