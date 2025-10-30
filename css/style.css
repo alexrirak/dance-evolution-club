@@ -386,6 +386,14 @@ header[role="title-page"] h2,header[role="title-page"] h2{ color:#000; font-size
 
 .pricing>section>header>h4{ text-transform:uppercase; font-size:19px; font-weight:700}
 
+.schedule{ text-align:center}
+
+.schedule>div{ max-width:300px; border:2px solid #FFF; color:#FFF;}
+
+.schedule>div>header{ border-bottom:2px solid #FFF; padding-top:37px; padding-bottom:15px}
+
+.schedule>div>header>h4{ text-transform:uppercase; font-size:19px; font-weight:700}
+
 .pricing>section>h2{ font-weight:300; margin-top:7px; margin-bottom:29px; border-bottom:2px solid #FFF; padding-bottom:12px}
 
 .pricing>section>h2>span{ font-weight:700; font-size:48px}
@@ -398,10 +406,6 @@ header[role="title-page"] h2,header[role="title-page"] h2{ color:#000; font-size
 
 /*.pricing>section input[type="button"]:hover{ background-color:#549e3a; color:#FFF}*/
 
-/*.pricing>section:hover{ background-color:#FE0002;-webkit-transform:scale(1.1);*/
-
-transform:scale(1.1);}
-
 /*== Section Three ==*/
 
 .section-four{ padding-top:86px; padding-bottom:102px; background-color:#f7f7f8}
@@ -410,21 +414,13 @@ transform:scale(1.1);}
 
 /* Team */
 
-.team-pan figure{ padding:5px; border:5px solid #C3272B; overflow:hidden; background-color:#FFF;}
+.team figure{ padding:5px; border:5px solid #C3272B; overflow:hidden; background-color:#FFF;}
 
-.team-pan section:hover figure img{webkit-transform:scale(1.1);
+.team header{ text-align:center; padding-top:28px}
 
-transform:scale(1.1); opacity:0.8}
+.team header h5{ font-size:15px; line-height:16px; padding:0; margin:0; color:#5e5e64; font-weight:400}
 
-.team-pan header{ text-align:center; padding-top:38px}
-
-.team-pan header h5,.team-pan header h6{ font-size:15px; line-height:16px; padding:0; margin:0; color:#5e5e64; font-weight:400}
-
-.team-pan header h5{ text-transform:uppercase; font-weight:700; color:#000; padding-bottom:8px; display:block}
-
-.team-pan header a{ display:inline-block; text-align:center; background-color:#cdcdce; color:#FFF; width:25px; height:25px; font-size:12px; line-height:25px; font-weight:normal; border-radius:100%;; margin:15px 3.5px; margin-bottom:0}
-
-.team-pan header a:hover{ background-color:#C3272B}
+.team header h5{ text-transform:uppercase; font-weight:700; color:#000; padding-bottom:8px; display:block}
 
 /*== Section Five ==*/
 
@@ -531,3 +527,17 @@ border-bottom-right-radius: 3px;}
 .footer .copy{ padding:0; margin:0; color:#b6b6b6; font-size:13px; line-height:17px; font-weight:300; padding-top:7px; letter-spacing:1px}
 .footer .copy a{color:#b6b6b6;}
 .footer .fa-heart { color: #e84545; font-size: 11px; margin: 0 2px;}
+
+/* Hide image bg image on small screens ----------- */
+@media only screen and (max-width: 770px) {
+	.mobile-hide { display: none; }
+  }
+
+.row.display-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+	display: flex;
+	flex-direction: column;
+}
