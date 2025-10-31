@@ -1,699 +1,445 @@
 <!DOCTYPE html>
 
-<!--
-TO DO:
-  -make logo bigger but then small again when scrolling
-  -fix <map>
-  -eliminate the need for coding (revolutionary)
-  -change home <picture>
-  -1. group Class 2. Comp Schedule 3. Fb Group Page
-
-
--->
 <html lang="en">
 
 <head>
-  <!--
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
-                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <title>Dance Evolution</title>
 
-                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 
-                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                      -->
+    <!-- responsive -->
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
 
-  <meta charset="utf-8">
+    <!-- font-awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- font-awesome -->
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Group Schedule Styles -->
+    <style>
+        .day {
+            width: 100px;
+            text-align: center;
+            background: #000;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 10px 0;
+            font-size: 1.2em;
+        }
 
-  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-
-  <title>Dance Evolution</title>
-
-
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- style -->
-
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-
-  <!-- Bootstrap -->
-
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-  <!-- carousel -->
-
-  <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
-
-  <!-- responsive -->
-
-  <link href="css/responsive.css" rel="stylesheet" type="text/css">
-
-  <!-- font-awesome -->
-
-  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-  <!-- font-awesome -->
-
-  <link href="css/animate.min.css" rel="stylesheet" type="text/css">
-
-  <link href="css/popup.css" rel="stylesheet" type="text/css">
+        .schedule {
+            background: #eee;
+            border-radius: 20px;
+            padding: 15px 25px;
+            font-size: 1em;
+            line-height: 1.6;
+            text-align: left;
+        }
+    </style>
 
 </head>
-<!-- <div class="d-flex justify-content-center">
-<div class="alert alert-danger page-alert" margin=0 id="alert-1" style="display: block;">
-        <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        <h3><strong>DEC News</strong></h3>
-        <div class="container">
-          <div class="row">
-            <div class="col-s">
-              <strong>November 28, 2019</strong>  ::  Thanksgiving Day Studio is Closed
-            </div>
-            <div class="col-s">
-              <strong>December 30th 2019 - 1st of January 2020 Winter Break</strong> :: Studio is Closed
-            </div>
-            <div class="col-s">
-              <strong>May 25, 2019 Memorial Day</strong> :: Studio is Closed
-            </div>
-          </div>
-        </div>
-</div>
-</div> -->
+<!--<div class="d-flex justify-content-center">-->
+<!--    <div class="alert alert-danger page-alert" margin=0 id="alert-1" style="display: block;">-->
+<!--        <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>-->
+<!--        <h3><strong>DEC News</strong></h3>-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-s">-->
+<!--                    <strong>November 28, 2019</strong>  ::  Thanksgiving Day Studio is Closed-->
+<!--                </div>-->
+<!--                <div class="col-s">-->
+<!--                    <strong>December 30th 2019 - 1st of January 2020 Winter Break</strong> :: Studio is Closed-->
+<!--                </div>-->
+<!--                <div class="col-s">-->
+<!--                    <strong>May 25, 2019 Memorial Day</strong> :: Studio is Closed-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <body class="module-home" data-spy="scroll" data-target=".navbar">
 
-
-
-  <!-- header -->
-
-  <header role="header" class="header-top" id="headere-top">
-
-
-
+<!-- header -->
+<header role="header" class="header-top" id="headere-top">
     <div class="header-fixed-wrapper" role="header-fixed">
+        <div class="container">
+            <!-- hgroup -->
+            <hgroup class="row">
 
-      <div class="container">
+                <!-- logo -->
+                <div class="col-xs-5 col-sm-2 col-md-2 col-lg-2">
+                    <h1>
+                        <a href="#headere-top" id="danceEvolutionLogo" title="Rooky">
+                            <img src="images/logo.png" alt="Rooky" title="Rooky" style="width:2em; height:2em;" />
+                        </a>
+                    </h1>
+                </div>
+                <!-- logo -->
 
-        <!-- hgroup -->
+                <!-- nav -->
+                <nav role="navigation" class="col-xs-12 col-sm-10 col-md-10 col-lg-10 navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
 
-        <hgroup class="row">
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#headere-top" title="Home">Home</a></li>
+                            <li><a href="#section-one" title="Overview">Overview</a></li>
+                            <li><a href="#section-two" title="Features">Features</a></li>
+                            <li><a href="#section-three" title="Pricing">Programs</a></li>
+                            <li><a href="#section-four" title="Team">Team</a></li>
+                            <!--                <li><a href="#section-five" title="Contact">Contact</a></li>-->
+                            <!--                <li><a href="#section-six" title="Join Us">Info</a></li>-->
+                        </ul>
+                    </div>
+                </nav>
+                <!-- nav -->
 
-          <!-- logo -->
-
-          <div class="col-xs-5 col-sm-2 col-md-2 col-lg-2">
-
-            <h1>
-
-
-              <a href="#headere-top" id="danceEvolutionLogo" title="Rooky"><img src="images/logo.png" alt="Rooky" title="Rooky" style="width:2em; height:2em;" /></a>
-
-            </h1>
-
-          </div>
-
-          <!-- logo -->
-
-          <!-- nav -->
-
-          <nav role="navigation" class="col-xs-12 col-sm-10 col-md-10 col-lg-10 navbar navbar-default">
-
-            <div class="navbar-header">
-
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-
-                <span class="sr-only">Toggle navigation</span>
-
-                <span class="icon-bar"></span>
-
-                <span class="icon-bar"></span>
-
-                <span class="icon-bar"></span>
-
-              </button>
-
-            </div>
-
-            <div id="navbar" class="navbar-collapse collapse">
-
-              <ul class="nav navbar-nav">
-
-                <li class="active"><a href="#headere-top" title="Home">Home</a></li>
-
-                <li><a href="#section-one" title="Overview">Overview</a></li>
-
-                <li><a href="#section-two" title="Features">Features</a></li>
-
-                <li><a href="#section-three" title="Pricing">Programs</a></li>
-
-                <li><a href="#section-four" title="Team">Team</a></li>
-                <!--
-                                    <li><a href="#section-five" title="Contact">Contact</a></li>
-                                  -->
-                <!-- <li><a href="#section-six" title="Join Us">Info</a></li> -->
-
-              </ul>
-
-            </div>
-
-          </nav>
-
-          <!-- nav -->
-
-        </hgroup>
-
-        <!-- hgroup -->
-
-      </div>
-
+            </hgroup>
+            <!-- hgroup -->
+        </div>
     </div>
 
     <!-- banner Text -->
-
     <section class="text-center" style="overflow-x: hidden">
 
-      <h2>Dance Evolution</h2>
+        <h2>Dance Evolution</h2>
+        <p>One Team, One Dream</p>
 
-      <p>One Team, One Dream</p>
-
-      <style>
-        .nowrap {
-          white-space: nowrap;
-        }
-
-        .div-centered {
-          text-align: left;
-          margin: auto;
-          width: 500px;
-        }
-      </style>
-      <br><br><br><br><br><br>
-      <div class="row">
-        <div class="col-sm-3 col-md-5"></div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-          <div class="div-centered">
-            <a href="https://www.google.com/maps/place/479+N+Midland+Ave,+Saddle+Brook,+NJ+07663/@40.9134669,-74.1110669,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2fb93074424df:0x47ed784057b503a8!8m2!3d40.9134669!4d-74.1088782" target="_blank"
-              style="color:white">
-              <i class="material-icons nowrap" style="font-size:36px;color:white">place</i>479 N Midland Ave Saddle Brook, NJ 07663
-              <br /><i class="material-icons" style="font-size:36px;color:white">&#xe551;</i>201-791-6060
-            </a>
-          </div>
+        <div class="row" style="margin-top: 6em;">
+            <div class="col-sm-3 col-md-5"></div>
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                <div style="text-align: left;display: flex;flex-direction: column;color:white;">
+                    <a href="https://www.google.com/maps/place/479+N+Midland+Ave,+Saddle+Brook,+NJ+07663/@40.9134669,-74.1110669,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2fb93074424df:0x47ed784057b503a8!8m2!3d40.9134669!4d-74.1088782"
+                       target="_blank"
+                    >
+                        <div style="display:flex;align-items:center;gap:0.5rem;">
+                            <i class="material-icons" style="font-size:36px;color:white">place</i>
+                            <span>479 N Midland Ave Saddle Brook, NJ 07663</span>
+                        </div>
+                    </a>
+                    <div style="display:flex;align-items:center;gap:0.5rem;">
+                        <i class="material-icons" style="font-size:36px;color:white">&#xe551;</i>
+                        <span>201-791-6060</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-
     </section>
-
-
-
     <!-- banner Text -->
 
-
-
     <!-- banner image -->
-
     <figure>
-
-      <div class="parallax-window item tp-banner-container container-fluid" data-parallax="scroll" data-image-src="images/daveShelly.JPG"></div>
-
+        <div class="parallax-window item tp-banner-container container-fluid" data-parallax="scroll" data-image-src="images/daveShelly.jpg"></div>
     </figure>
-
     <!-- banner image -->
 
-  </header>
+</header>
+<!-- header -->
 
-  <!-- header -->
-
-
-
-  <!-- main -->
-
-  <main role="main" id=" main-wrapper">
-
+<!-- main -->
+<main role="main" id=" main-wrapper">
     <!-- section-one -->
-
     <section class="section-one text-center" id="section-one">
+        <div class="container">
+            <header role="title-page">
+                <h4>What we do</h4>
+                <h2>We make our studio<br />your second home.</h2>
+            </header>
 
-      <div class="container">
-
-        <header role="title-page">
-
-          <h4>What we do</h4>
-
-          <h2>We make our studio<br />your second home.</h2>
-
-        </header>
-
-        <article>
-
-          <p style="text-align: justify; text-justify: inter-word;">
-            Come experience the best Dancesport youth training club in the NJ and NYC region. We understand that searching for the right type of club that’s fit for developing great dancers at any age is a big decision. We here at Dance Evolution
-            want to make the choice an easy one. Since 2013, Inna and the Dance Evolution team have developed an excellent team of instructors that continue to grow and produce beautiful champion dancers. From the first day a dancer starts at our
-            studio until the last, we aim to promote every individual's core talents and strengths. We value cooperation among peers, strong team building skills, and respect for the discipline and art of dance. We offer training in various styles of
-            competitive Ballroom Dancesport and we know you'll find a great home here at our studio. We welcome your visit.
-          </p>
-
-        </article>
-
-      </div>
-
+            <article>
+                <p style="text-align: justify; text-justify: inter-word;">
+                    Our mission is to develop strong, confident, and passionate ballroom dancers who excel on and off the competition floor.
+                    We provide world-class instruction, mentorship, and performance opportunities that empower both youth and adults to reach their full potential in dance and in life.
+                </p>
+            </article>
+        </div>
     </section>
-
     <!-- section-one -->
 
-
-
     <!-- section-two -->
-
     <section class="section-two" id="section-two">
+        <!-- image-content -->
+        <section>
+            <div class="col-sm-6 col-md-6">
+                <article>
+                    <h2>Benefits of Dance</h2>
+                    <p></p>
+                    <ul>
+                        <li>Self Confidence</li>
+                        <li>Team Collaboration</li>
+                        <li>Improvement in Memory</li>
+                        <li>Strengthened Neuron Connectivity</li>
+                        <li>Increase in Self Worth</li>
+                        <li>Sportsmanship</li>
+<!--                        <li>Studies using PET imaging have identified regions of the brain that contribute to dance learning and performance including the motor cortex, somatosensory cortex, basal ganglia, and cerebellum.</li>-->
+                    </ul>
+                </article>
+            </div>
 
+            <div class="col-xs-12 col-sm-6 col-md-6 mobile-hide">
+                <figure class="row" style="background-image:url('images/sasha-dance.jpg')"></figure>
+            </div>
+        </section>
+        <!-- image-content -->
 
+        <div class="clearfix"></div>
 
-      <!-- image-content -->
+        <!-- image-content -->
+        <section>
+            <div class="col-xs-12 col-sm-6 col-md-6 mobile-hide">
+                <figure class="row" style="background-image:url('images/sasha-dance.jpg')"></figure>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <article>
+                    <h2>Testimonials</h2>
+                    <p>This is a dance studio that stands out because of their great leadership and complete dedication to their students. They treat us like family.
+                        - <b>Peter K.</b></p>
+                    <p>If you are looking for dance school for your child look no further. If you are looking for best instructors with years of experience and who are dancers themselves, look no further. If you are looking for new friends, join Dance
+                        Evolution Club and you and your child will find new family and another place you will call home.
+                        - <b>Marina K.</b>
+                    </p>
+                    <p>The best dance school. I have both kids (boy and a girl, 10 & 7) in school learning to dance, friendship, and much more. They became much more organize, athletic and became much better. I enjoy seeing my kids competing with others in
+                        dance completion all over the US. Thank you to wonderful coaches and leader of the school. Highly recommend
+                        - <b>Eugene S.</b>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- image-content -->
 
-      <section>
-
-        <div class="col-sm-6 col-md-6">
-
-          <article>
-
-            <h2>Benefits of Dance</h2>
-
-            <p></p>
-
-            <ul>
-
-              <li>Self Confidence</li>
-
-              <li>Team Collaboration</li>
-
-              <li>Improvement in Memory</li>
-
-              <li>Strengthened Neuron Connectivity</li>
-
-              <li>Increase in Self Worth</li>
-
-              <li>Sportsmanship</li>
-
-
-
-              <!--
-                                <li>Studies using PET imaging have identified regions of the brain that contribute to dance learning and performance including the motor cortex, somatosensory cortex, basal ganglia, and cerebellum.</li>
-                                -->
-            </ul>
-
-          </article>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-6 mobile-hide">
-
-          <figure class="row" style="background-image:url('images/sasha-dance.jpg')"></figure>
-
-        </div>
-
-      </section>
-
-      <!-- image-content -->
-
-      <div class="clearfix"></div>
-
-      <!-- image-content -->
-
-      <section>
-
-        <div class="col-xs-12 col-sm-6 col-md-6 mobile-hide">
-
-          <figure class="row" style="background-image:url('images/sasha-dance.jpg')"></figure>
-
-        </div>
-
-        <div class="col-sm-6 col-md-6">
-
-          <article>
-
-            <!-- <h2>Testimonials</h2> -->
-
-            <p>"This is a dance studio that stands out because of their great leadership and complete dedication to their students. They treat us like family.
-              - <b>Peter K.</b></p>
-
-            <p>If you are looking for dance school for your child look no further. If you are looking for best instructors with years of experience and who are dancers themselves, look no further. If you are looking for new friends, join Dance
-              Evolution Club and you and your child will find new family and another place you will call home.
-              - <b>Marina K.</b>
-            </p>
-
-            <p>The best dance school. I have both kids (boy and a girl, 10 & 7) in school learning to dance, friendship, and much more. They became much more organize, athletic and became much better. I enjoy seeing my kids competing with others in
-              dance completion all over the US. Thank you to wonderful coaches and leader of the school. Highly recommend
-              - <b>Eugene S.</b>
-            </p>
-          </article>
-
-        </div>
-
-      </section>
-
-      <!-- image-content -->
-
-      <div class="clearfix"></div>
-
-
+        <div class="clearfix"></div>
     </section>
-
     <!-- section-two -->
 
-
-
     <!-- section-three -->
-
     <section class="section-three" id="section-three">
+        <div class="container">
+            <header role="title-page" class="text-center">
+                <h4>Dance Evolution Club Programs</h4>
+                <h2>Group Class Schedule</h2>
+            </header>
 
-      <div class="container">
-
-        <header role="title-page" class="text-center">
-
-          <h4>Dance Evolution Club Programs</h4>
-          <!--
-                        <h2>We offer 3 main programs<br/></h2>
-                      -->
-        </header>
-
-        <!-- pricing -->
-
-        <div class="pricing">
-
-          <figure>
-            <a href="docs/GroupSchedule2024.pdf" target="_blank">
-              <img src='images/GroupSchedule2024.png' alt="" class=" img-responsive" style="margin: auto;"/>
-            </a>
-          </figure>
-
+            <div class="pricing">
+                <figure>
+                    <div style="display: flex;justify-content: center;" >
+                        <table style="border-collapse: separate;border-spacing: 5px 10px">
+                            <tr>
+                                <td>
+                                    <div class="day">
+                                        MON
+                                    </div>
+                                </td>
+                                <td class="schedule">
+                                    4:45–5:30 Teddy Bear<br>
+                                    5:15–6:00 Advanced 6–8 Girls<br>
+                                    5:30–6:45 Rising Stars<br>
+                                    6:45–7:30 E/H Class<br>
+                                    7:30–8:15 Adult Group<br>
+                                    8:15–9:00 Advanced Girls 12+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="day">
+                                        TUE
+                                    </div>
+                                </td>
+                                <td class="schedule">
+                                    4:45–5:30 Rising Stars Girls<br>
+                                    5:30–6:15 Teddy Bear Girls<br>
+                                    6:15–7:00 Advanced Bronze Couples<br>
+                                    8:30–9:30 Open Seminar
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="day">
+                                        WED
+                                    </div>
+                                </td>
+                                <td class="schedule">
+                                    4:45–5:30 Advanced 6–8 Girls<br>
+                                    5:30–6:15 Rising Stars<br>
+                                    6:15–7:30 E Class<br>
+                                    7:30–8:15 D Class<br>
+                                    8:15–9:00 Advanced Girls 12+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="day">
+                                        THU
+                                    </div>
+                                </td>
+                                <td class="schedule">
+                                    4:30–5:15 Rising Stars Girls<br>
+                                    5:15–5:45 Girls Stretch<br>
+                                    6:15–7:00 Teddy Bear Girls<br>
+                                    6:15–7:00 Advanced Bronze Couples
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="day">
+                                        FRI
+                                    </div>
+                                </td>
+                                <td class="schedule">
+                                    4:45–5:30 Teddy Bear<br>
+                                    6:30–7:15 H Class<br>
+                                    8:00–9:30 BOOTCAMP
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </figure>
+            </div>
         </div>
-
-        <!-- pricing -->
-
-      </div>
-
     </section>
-
     <!-- section-three -->
-
-
 
     <!-- section-four -->
-
     <section class="section-four" id="section-four">
-
-      <div class="container">
-
-        <header role="title-page" class="text-center">
-
-          <h4></br>Meet The Team</h4>
-
-          <h2>Our team is passionate about bringing the <br />best for our customers.</h2>
-
-        </header>
-
-        <!-- Team -->
-        <!--=============================================================================== -->
-        <div class="team row">
-          <section class="col-xs-12 col-sm-6 col-md-4">
-            <figure><img src='images/Inna.JPG' alt="" class=" img-responsive" /></figure>
-            <header>
-              <h5>Inna Firestein</h5>
-
+        <div class="container">
+            <header role="title-page" class="text-center">
+                <h4>Meet The Team</h4>
+                <h2>Our team is passionate about bringing the <br />best for our customers.</h2>
             </header>
 
-          </section>
-
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/aa.JPG' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Aigars Stolcers & Agita Baranovska</h5>
-
-            </header>
-
-          </section>
-
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/max_new.JPG' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Max Firestein</h5>
-
-            </header>
-
-          </section>
-
-        </div>
-        <!--=============================================================================== -->
-        <div class="row mt-3"><br></div>
-        <!--=============================================================================== -->
-        <div class="team row">
-
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/nika_new.jpg' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Nicole Mtchedlidze</h5>
-
-            </header>
-
-          </section>
-
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/dave_new.jpg' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Dave Firestein</h5>
-
-            </header>
-
-          </section>
-
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/Kennedy.JPG' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Kennedy Eaton</h5>
-
-            </header>
-
-          </section>
-
-        </div>
-        <!--=============================================================================== -->
-        <div class="row mt-3"><br></div>
-        <!--=============================================================================== -->
-        <div class="team row">
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/klinchiks.JPG' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Julia and Andrew</h5>
-
-            </header>
-
-          </section>
-
-        </div>
-        <!--=============================================================================== -->
-        <div class="row mt-3"><br></div>
-
-        <!-- Team -->
-
-      </div>
-      </br>
-    </section>
-
-    <!-- section-fore -->
-
-
-
-
-
-
-
-    <!-- section-six -->
-    <!--
-            <section class="section-six" id="section-six">
-
-            	<div class="container">
-
-                	 <header role="title-page" class="text-center">
-
-                        <h4>Get in touch</h4>
-
-                        <h2>Have any questions? Our team will happy to<br/>answer your questions.</h2>
-
+            <!-- Team -->
+            <!--=============================================================================== -->
+            <div class="team row" style="margin-bottom: 2em">
+                <section class="col-xs-12 col-sm-6 col-md-4">
+                    <figure>
+                        <img src='images/Inna.JPG' alt="" class=" img-responsive" />
+                    </figure>
+                    <header>
+                        <h5>Inna Firestein</h5>
                     </header>
+                </section>
 
+                <section class="col-xs-12 col-sm-6 col-md-4">
+                    <figure>
+                        <img src='images/aigars.jpg' alt="" class=" img-responsive" />
+                    </figure>
+                    <header>
+                        <h5>Aigars Stolcers</h5>
+                    </header>
+                </section>
 
+                <section class="col-xs-12 col-sm-6 col-md-4">
+                    <figure>
+                        <img src='images/aa.JPG' alt="" class=" img-responsive" />
+                    </figure>
+                    <header>
+                        <h5>Agita Baranovska</h5>
+                    </header>
+                </section>
+            </div>
+            <!--=============================================================================== -->
+            <div class="team row" style="margin-bottom: 2em">
+                <section class="col-xs-12 col-sm-6 col-md-4">
+                    <figure>
+                        <img src='images/max_new.JPG' alt="" class=" img-responsive" />
+                    </figure>
+                    <header>
+                        <h5>Max Firestein</h5>
+                    </header>
+                </section>
 
-                    <div class="contact-form">
+                <section class="col-xs-12 col-sm-6 col-md-4">
+                    <figure>
+                        <img src='images/nika_new.jpg' alt="" class=" img-responsive" />
+                    </figure>
+                    <header>
+                        <h5>Nicole Mtchedlidze</h5>
+                    </header>
+                </section>
 
-                        <div id="message"></div>
+                <section class="col-xs-12 col-sm-6 col-md-4">
+                    <figure>
+                        <img src='images/dave_new.jpg' alt="" class=" img-responsive" />
+                    </figure>
+                    <header>
+                        <h5>Dave Firestein</h5>
+                    </header>
+                </section>
+            </div>
+            <!--=============================================================================== -->
+            <div class="team row" style="margin-bottom: 2em">
+                <section class="col-xs-12 col-sm-6 col-md-4">
+                    <figure>
+                        <img src='images/Kennedy.JPG' alt="" class=" img-responsive" />
+                    </figure>
+                    <header>
+                        <h5>Kennedy Eaton</h5>
+                    </header>
+                </section>
+                <section class="col-xs-12 col-sm-6 col-md-4">
+                    <figure>
+                        <img src='images/vlada.jpg' alt="" class=" img-responsive" />
+                    </figure>
+                    <header>
+                        <h5>Vlada Kovalenko</h5>
+                    </header>
+                </section>
+                <section class="col-xs-12 col-sm-6 col-md-4">
+                    <figure>
+                        <img src='images/PavelVeronica.jpg' alt="" class=" img-responsive" />
+                    </figure>
+                    <header>
+                        <h5>Pavel Ivanov and Veronica Baranova</h5>
+                    </header>
+                </section>
+            </div>
+            <!-- Team -->
 
-                                <form method="post" action="php/contactfrom.php" name="cform" id="cform">
-
-                                <div class="col-md-6 col-lg-6 col-sm-6">
-
-                                	<input  name="name" id="name" type="text" placeholder="Full Name">
-
-                                </div>
-
-                                <div class="col-md-6 col-lg-6 col-sm-6">
-
-                                	<input  name="email" id="email" type="email"  placeholder="Email Address">
-
-                                </div>
-
-                                <div class="clearfix"></div>
-
-                                <textarea name="comments" id="comments" cols="" rows="" placeholder="Question in Detail"></textarea>
-
-                                <div class="clearfix"></div>
-
-                                <input name="" type="submit" value="Send mail">
-
-                                <div id="simple-msg"></div>
-
-                        </form>
-
-                     </div>
-
-
-
-                    <div class="clearfix"></div>
-
-                </div>
-
-              -->
-
-    <!-- map -->
-    <!--
-                 <div class="map-wrapper">
-
-                        <div id="surabaya"></div>
-
-                    </div>
-
-                -->
-
-    <!--</section>-->
-
-    <!-- section-six -->
-
-
+        </div>
+    </section>
+    <!-- section-four -->
 
     <!-- footer -->
-
     <footer role="footer" class="footer text-center">
-
-      <div class="container">
-
-        <!-- socil-icons -->
-
-        <section role="socil-icons" class="socil-icons">
-
-          <div class="container">
-          </div>
-
-          <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
-
-          <a href="https://www.facebook.com/DanceEvolutionClub/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-
-          <a href="https://www.instagram.com/dance.evolution.club/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
-
-
-        </section>
-
-        <!-- socil-icons -->
-
-        <!-- nav -->
-
-        <!-- <nav role="footer-nav">
-
-                        <a href="#">Terms of Use </a>
-
-                        <a href="#">Privacy Policy</a>
-
-                    </nav> -->
-
-        <!-- nav -->
-        <!--
-                    <p class="copy">&copy; 2016 Sartr. All rights reserved. Made with <i class="fa fa-heart pulse"></i> by <a href="http://www.designstub.com/">Designstub</a></p> -->
-
-      </div>
-
+        <div class="container">
+            <section role="socil-icons" class="socil-icons">
+                <a href="https://www.facebook.com/DanceEvolutionClub/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/dance.evolution.club/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </section>
+        </div>
     </footer>
-
     <!-- footer -->
+</main>
+<!-- main -->
 
-
-
-  </main>
-
-  <!-- main -->
-
-
-
-
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
-  <script src="js/jquery.min.js" type="text/javascript"></script>
-
-
-
-  <script src="js/parallax.min.js" type="text/javascript"></script>
-
-  <script type="text/javascript">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/parallax.min.js" type="text/javascript"></script>
+<script type="text/javascript">
     $('.parallax-window').parallax({});
-  </script>
-
-  <script src="js/main.js" type="text/javascript"></script>
-
-  <script src="js/owl.carousel.js" type="text/javascript"></script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
-  <script src="js/maps.js" type="text/javascript"></script>
-
-  <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
-
-  <script type="text/javascript" src="js/video.js"></script>
-
-  <script src="js/custom.js" type="text/javascript"></script>
-
-  <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-
-  <script src="js/jquery.contact.js" type="text/javascript"></script>
-
-  <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
-  <script src="js/html5shiv.min.js" type="text/javascript"></script>
-
-
+</script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
 
 </body>
-
 </html>
