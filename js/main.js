@@ -71,22 +71,7 @@ $(document).ready(function() {
       }
     }
   });
-//====================================added this to shrink logo
-/*  window.onscroll = function() {
-  growShrinkLogo()
-};
 
-function growShrinkLogo() {
-  var Logo = document.getElementById("danceEvolutionLogo")
-  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-    Logo.style.width = '2em';
-    Logo.style.height = '2em';
-  } else {
-    Logo.style.width = '2em';
-    Logo.style.height = '2em';
-  }
-}
-*/
   var owl = $("#owl-demo");
 
       owl.owlCarousel({
@@ -106,15 +91,5 @@ function growShrinkLogo() {
 
       });
 
-
-	  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-          disableOn: 700,
-          type: 'iframe',
-          mainClass: 'mfp-fade',
-          removalDelay: 160,
-          preloader: false,
-
-          fixedContentPos: false
-        });
-
 });
+

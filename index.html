@@ -1,69 +1,57 @@
 <!DOCTYPE html>
 
-<!--
-TO DO:
-  -make logo bigger but then small again when scrolling
-  -fix <map>
-  -eliminate the need for coding (revolutionary)
-  -change home <picture>
-  -1. group Class 2. Comp Schedule 3. Fb Group Page
-
-
--->
 <html lang="en">
 
 <head>
-  <!--
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-
-                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-
-                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-
-                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-
-                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                      -->
 
   <meta charset="utf-8">
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
   <title>Dance Evolution</title>
 
-
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- style -->
-
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
   <!-- Bootstrap -->
-
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
   <!-- carousel -->
-
   <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
 
   <!-- responsive -->
-
   <link href="css/responsive.css" rel="stylesheet" type="text/css">
 
   <!-- font-awesome -->
-
   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
   <!-- font-awesome -->
-
   <link href="css/animate.min.css" rel="stylesheet" type="text/css">
 
-  <link href="css/popup.css" rel="stylesheet" type="text/css">
+    <!-- Group Schedule Styles -->
+    <style>
+        .day {
+            width: 100px;
+            text-align: center;
+            background: #000;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .schedule {
+            background: #eee;
+            border-radius: 20px;
+            padding: 15px 25px;
+            font-size: 1em;
+            line-height: 1.6;
+            text-align: left;
+        }
+    </style>
 
 </head>
 <!-- <div class="d-flex justify-content-center">
@@ -377,19 +365,84 @@ TO DO:
         <header role="title-page" class="text-center">
 
           <h4>Dance Evolution Club Programs</h4>
-          <!--
-                        <h2>We offer 3 main programs<br/></h2>
-                      -->
-        </header>
+          <h2>Group Class Schedule</h2>
 
-        <!-- pricing -->
+        </header>
 
         <div class="pricing">
 
           <figure>
-            <a href="docs/GroupSchedule2024.pdf" target="_blank">
-              <img src='images/GroupSchedule2024.png' alt="" class=" img-responsive" style="margin: auto;"/>
-            </a>
+              <div style="display: flex;justify-content: center;" >
+                  <table style="border-collapse: separate;border-spacing: 5px 10px">
+                      <tr>
+                          <td>
+                              <div class="day">
+                                  MON
+                              </div>
+                          </td>
+                          <td class="schedule">
+                              4:45–5:30 Teddy Bear<br>
+                              5:15–6:00 Advanced 6–8 Girls<br>
+                              5:30–6:45 Rising Stars<br>
+                              6:45–7:30 E/H Class<br>
+                              7:30–8:15 Adult Group<br>
+                              8:15–9:00 Advanced Girls 12+
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="day">
+                                  TUE
+                              </div>
+                          </td>
+                          <td class="schedule">
+                              4:45–5:30 Rising Stars Girls<br>
+                              5:30–6:15 Teddy Bear Girls<br>
+                              6:15–7:00 Advanced Bronze Couples<br>
+                              8:30–9:30 Open Seminar
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="day">
+                                  WED
+                              </div>
+                          </td>
+                          <td class="schedule">
+                              4:45–5:30 Advanced 6–8 Girls<br>
+                              5:30–6:15 Rising Stars<br>
+                              6:15–7:30 E Class<br>
+                              7:30–8:15 D Class<br>
+                              8:15–9:00 Advanced Girls 12+
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="day">
+                                  THU
+                              </div>
+                          </td>
+                          <td class="schedule">
+                              4:30–5:15 Rising Stars Girls<br>
+                              5:15–5:45 Girls Stretch<br>
+                              6:15–7:00 Teddy Bear Girls<br>
+                              6:15–7:00 Advanced Bronze Couples
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="day">
+                                  FRI
+                              </div>
+                          </td>
+                          <td class="schedule">
+                              4:45–5:30 Teddy Bear<br>
+                              6:30–7:15 H Class<br>
+                              8:00–9:30 BOOTCAMP
+                          </td>
+                      </tr>
+                  </table>
+              </div>
           </figure>
 
         </div>
@@ -421,97 +474,95 @@ TO DO:
         <!-- Team -->
         <!--=============================================================================== -->
         <div class="team row">
-          <section class="col-xs-12 col-sm-6 col-md-4">
-            <figure><img src='images/Inna.JPG' alt="" class=" img-responsive" /></figure>
-            <header>
-              <h5>Inna Firestein</h5>
+            <section class="col-xs-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src='images/Inna.JPG' alt="" class=" img-responsive" />
+                </figure>
+                <header>
+                    <h5>Inna Firestein</h5>
+                </header>
+            </section>
 
-            </header>
+            <section class="col-xs-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src='images/aigars.jpg' alt="" class=" img-responsive" />
+                </figure>
+                <header>
+                    <h5>Aigars Stolcers</h5>
+                </header>
+            </section>
 
-          </section>
+            <section class="col-xs-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src='images/aa.JPG' alt="" class=" img-responsive" />
+                </figure>
+                <header>
+                    <h5>Agita Baranovska</h5>
+                </header>
+            </section>
 
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/aa.JPG' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Aigars Stolcers & Agita Baranovska</h5>
-
-            </header>
-
-          </section>
-
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/max_new.JPG' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Max Firestein</h5>
-
-            </header>
-
-          </section>
 
         </div>
         <!--=============================================================================== -->
         <div class="row mt-3"><br></div>
         <!--=============================================================================== -->
         <div class="team row">
+            <section class="col-xs-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src='images/max_new.JPG' alt="" class=" img-responsive" />
+                </figure>
+                <header>
+                    <h5>Max Firestein</h5>
+                </header>
+            </section>
 
-          <section class="col-xs-12 col-sm-6 col-md-4">
+            <section class="col-xs-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src='images/nika_new.jpg' alt="" class=" img-responsive" />
+                </figure>
+                <header>
+                    <h5>Nicole Mtchedlidze</h5>
+                </header>
+            </section>
 
-            <figure><img src='images/nika_new.jpg' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Nicole Mtchedlidze</h5>
-
-            </header>
-
-          </section>
-
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/dave_new.jpg' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Dave Firestein</h5>
-
-            </header>
-
-          </section>
-
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/Kennedy.JPG' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Kennedy Eaton</h5>
-
-            </header>
-
-          </section>
+            <section class="col-xs-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src='images/dave_new.jpg' alt="" class=" img-responsive" />
+                </figure>
+                <header>
+                    <h5>Dave Firestein</h5>
+                </header>
+            </section>
 
         </div>
         <!--=============================================================================== -->
         <div class="row mt-3"><br></div>
         <!--=============================================================================== -->
         <div class="team row">
-          <section class="col-xs-12 col-sm-6 col-md-4">
-
-            <figure><img src='images/klinchiks.JPG' alt="" class=" img-responsive" /></figure>
-
-            <header>
-
-              <h5>Julia and Andrew</h5>
-
-            </header>
-
-          </section>
+            <section class="col-xs-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src='images/Kennedy.JPG' alt="" class=" img-responsive" />
+                </figure>
+                <header>
+                    <h5>Kennedy Eaton</h5>
+                </header>
+            </section>
+            <section class="col-xs-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src='images/vlada.jpg' alt="" class=" img-responsive" />
+                </figure>
+                <header>
+                    <h5>Vlada Kovalenko</h5>
+                </header>
+            </section>
+            <section class="col-xs-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src='images/PavelVeronica.jpg' alt="" class=" img-responsive" />
+                </figure>
+                <header>
+                    <h5>Pavel Ivanov and Veronica Baranova</h5>
+                </header>
+            </section>
 
         </div>
         <!--=============================================================================== -->
@@ -523,85 +574,7 @@ TO DO:
       </br>
     </section>
 
-    <!-- section-fore -->
-
-
-
-
-
-
-
-    <!-- section-six -->
-    <!--
-            <section class="section-six" id="section-six">
-
-            	<div class="container">
-
-                	 <header role="title-page" class="text-center">
-
-                        <h4>Get in touch</h4>
-
-                        <h2>Have any questions? Our team will happy to<br/>answer your questions.</h2>
-
-                    </header>
-
-
-
-                    <div class="contact-form">
-
-                        <div id="message"></div>
-
-                                <form method="post" action="php/contactfrom.php" name="cform" id="cform">
-
-                                <div class="col-md-6 col-lg-6 col-sm-6">
-
-                                	<input  name="name" id="name" type="text" placeholder="Full Name">
-
-                                </div>
-
-                                <div class="col-md-6 col-lg-6 col-sm-6">
-
-                                	<input  name="email" id="email" type="email"  placeholder="Email Address">
-
-                                </div>
-
-                                <div class="clearfix"></div>
-
-                                <textarea name="comments" id="comments" cols="" rows="" placeholder="Question in Detail"></textarea>
-
-                                <div class="clearfix"></div>
-
-                                <input name="" type="submit" value="Send mail">
-
-                                <div id="simple-msg"></div>
-
-                        </form>
-
-                     </div>
-
-
-
-                    <div class="clearfix"></div>
-
-                </div>
-
-              -->
-
-    <!-- map -->
-    <!--
-                 <div class="map-wrapper">
-
-                        <div id="surabaya"></div>
-
-                    </div>
-
-                -->
-
-    <!--</section>-->
-
-    <!-- section-six -->
-
-
+    <!-- section-four -->
 
     <!-- footer -->
 
@@ -613,16 +586,10 @@ TO DO:
 
         <section role="socil-icons" class="socil-icons">
 
-          <div class="container">
-          </div>
-
-          <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+          <div class="container"></div>
 
           <a href="https://www.facebook.com/DanceEvolutionClub/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-
           <a href="https://www.instagram.com/dance.evolution.club/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
-
 
         </section>
 
@@ -674,17 +641,7 @@ TO DO:
 
   <script src="js/owl.carousel.js" type="text/javascript"></script>
 
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
-  <script src="js/maps.js" type="text/javascript"></script>
-
-  <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
-
-  <script type="text/javascript" src="js/video.js"></script>
-
   <script src="js/custom.js" type="text/javascript"></script>
-
-  <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
 
   <script src="js/jquery.contact.js" type="text/javascript"></script>
 
