@@ -72,24 +72,4 @@ $(document).ready(function() {
     }
   });
 
-  var owl = $("#owl-demo");
-
-      owl.owlCarousel({
-
-        itemsCustom : [
-          [0, 1],
-          [450, 1],
-          [600, 1],
-          [700, 1],
-          [1000, 1],
-          [1200, 1],
-          [1400, 1],
-          [1600, 1]
-        ],
-        navigation : true,
-		autoPlay : 3000,
-
-      });
-
 });
-

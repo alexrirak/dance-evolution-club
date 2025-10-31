@@ -344,30 +344,6 @@ header[role="title-page"] h2,header[role="title-page"] h2{ color:#000; font-size
 
 .video-pan header a.video-button{ margin:0 auto; margin-bottom:20px}
 
-/*== Slider ==*/
-
-.slider-pan{ padding-top:87px;padding-bottom:91px}
-
-.slider-pan section article{ font-size:21px; line-height:36px; font-weight:400; padding-top:38px}
-
-.slider-pan section article:before{content:"\f10d";font-family:'FontAwesome'; color:#5e5e64}
-
-.slider-pan section article:after{content:"\f10e";font-family:'FontAwesome';color:#5e5e64}
-
-.slider-pan section header h5,.slider-pan article header h6{ font-size:15px; line-height:16px; padding:0; margin:0; font-weight:400}
-
-.slider-pan section header h5{ text-transform:uppercase; font-weight:700; color:#000; padding-bottom:8px}
-
-.slider-pan section header{ padding-top:38px;}
-
-.slider-pan .owl-buttons{ display:none}
-
-.slider-pan .owl-pagination{ text-align:center; padding-top:18px}
-
-.slider-pan .owl-pagination .owl-page{ display:inline-block; border-radius:100%; width:9px; height:9px; background-color:#c9c9c9; margin:0 3px;}
-
-.slider-pan .owl-pagination .owl-page.active{ background-color:#C3272B}
-
 /*== Section Three ==*/
 
 .section-three{ background-color:#9D2933; padding-top:87px; padding-bottom:50px}
